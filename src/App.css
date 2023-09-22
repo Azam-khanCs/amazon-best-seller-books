@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.book {
+  width: 240px;
+  border: 2px solid #44c2e7;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 35px;
+}
+
+.remov-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  cursor: pointer;
+  border: none;
+  background: #ff5e00;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #e5daeb;
+}
+
+.clear-btn {
+  cursor: pointer;
+  border: none;
+  background: #46554d;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fcfcff;
+}
+
+button:active {
+  scale: .8;
+}
+
+.title,
+.author,
+.price {
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.title {
+  text-align: justify;
+
+}
+
+.img img {
+  width: 100%;
+  height: 300px;
+}
+
+b {
+  font-size: 20px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.best-book {
+  text-decoration: underline;
+  padding: 20px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  letter-spacing: 2px
+}
+
+@media only screen and(max-width:768px) {
+  .book {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .books {
+    gap: 0;
+  }
+
+}
